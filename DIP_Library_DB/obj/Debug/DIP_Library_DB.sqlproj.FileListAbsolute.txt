@@ -1,0 +1,27 @@
+C:\Users\Teebone\source\repos\DIP_Library_DB\DIP_Library_DB\bin\Debug\DIP_Library_DB.dacpac
+C:\Users\Teebone\source\repos\DIP_Library_DB\DIP_Library_DB\bin\Debug\DIP_Library_DB.dll
+C:\Users\Teebone\source\repos\DIP_Library_DB\DIP_Library_DB\bin\Debug\DIP_Library_DB.pdb
+C:\Users\Teebone\source\repos\DIP_Library_DB\DIP_Library_DB\obj\Debug\DIP_Library_DB.sqlprojAssemblyReference.cache
+C:\Users\Teebone\source\repos\DIP_Library_DB\DIP_Library_DB\obj\Debug\Model.xml
+C:\Users\Teebone\source\repos\DIP_Library_DB\DIP_Library_DB\obj\Debug\refactor.xml
+C:\Users\Teebone\source\repos\DIP_Library_DB\DIP_Library_DB\obj\Debug\postdeploy.sql
+C:\Users\Teebone\source\repos\DIP_Library_DB\DIP_Library_DB\obj\Debug\predeploy.sql
+C:\Users\Teebone\source\repos\DIP_Library_DB\DIP_Library_DB\obj\Debug\DIP_Library_DB.dll
+C:\Users\Teebone\source\repos\DIP_Library_DB\DIP_Library_DB\obj\Debug\DIP_Library_DB.pdb
+D:\Diploma\OOP\Week 5 Dattabassez\DIP_Library_DB\DIP_Library_DB\bin\Debug\DIP_Library_DB.dacpac
+D:\Diploma\OOP\Week 5 Dattabassez\DIP_Library_DB\DIP_Library_DB\bin\Debug\DIP_Library_DB.dll
+D:\Diploma\OOP\Week 5 Dattabassez\DIP_Library_DB\DIP_Library_DB\bin\Debug\DIP_Library_DB.pdb
+D:\Diploma\OOP\Week 5 Dattabassez\DIP_Library_DB\DIP_Library_DB\obj\Debug\DIP_Library_DB.sqlprojAssemblyReference.cache
+D:\Diploma\OOP\Week 5 Dattabassez\DIP_Library_DB\DIP_Library_DB\obj\Debug\DIP_Library_DB.dll
+D:\Diploma\OOP\Week 5 Dattabassez\DIP_Library_DB\DIP_Library_DB\obj\Debug\DIP_Library_DB.pdb
+C:\DIP_Library_DB\DIP_Library_DB\bin\Debug\DIP_Library_DB.dacpac
+C:\DIP_Library_DB\DIP_Library_DB\bin\Debug\DIP_Library_DB.dll
+C:\DIP_Library_DB\DIP_Library_DB\bin\Debug\DIP_Library_DB.pdb
+C:\DIP_Library_DB\DIP_Library_DB\obj\Debug\DIP_Library_DB.dll
+C:\DIP_Library_DB\DIP_Library_DB\obj\Debug\DIP_Library_DB.pdb
+C:\DIP_Library_DB\DIP_Library_DB\obj\Debug\DIP_Library_DB.sqlprojAssemblyReference.cache
+C:\DIP_Library_DB 10_April\DIP_Library_DB\bin\Debug\DIP_Library_DB.dacpac
+C:\DIP_Library_DB 10_April\DIP_Library_DB\bin\Debug\DIP_Library_DB.dll
+C:\DIP_Library_DB 10_April\DIP_Library_DB\bin\Debug\DIP_Library_DB.pdb
+C:\DIP_Library_DB 10_April\DIP_Library_DB\obj\Debug\DIP_Library_DB.dll
+C:\DIP_Library_DB 10_April\DIP_Library_DB\obj\Debug\DIP_Library_DB.pdb

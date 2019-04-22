@@ -1,0 +1,23 @@
+﻿** Highlights
+     Tables that will be rebuilt
+       [dbo].[Books]
+       [dbo].[Loans]
+     Clustered indexes that will be dropped
+       None
+     Clustered indexes that will be created
+       None
+     Possible data issues
+       None
+
+** User actions
+     Table rebuild
+       [dbo].[Books] (Table)
+       [dbo].[Loans] (Table)
+
+** Supporting actions
+     Drop
+       [dbo].[FK_LOAN_BOOK] (Foreign Key)
+       [dbo].[FK_LOAN_STUDENT] (Foreign Key)
+     Create
+       [dbo].[FK_LOAN_BOOK] (Foreign Key)
+       [dbo].[FK_LOAN_STUDENT] (Foreign Key)
