@@ -1,9 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.28307.106
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28803.156
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "DIP_Library_DB", "DIP_Library_DB\DIP_Library_DB.sqlproj", "{78DC6A9D-FC8B-47B8-94AB-F07541883475}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DIP_Library__DB_API", "DIP_Library__DB_API\DIP_Library__DB_API.csproj", "{35F417DB-5151-48E2-BBAA-B823D40DEC34}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,6 +19,10 @@ Global
 		{78DC6A9D-FC8B-47B8-94AB-F07541883475}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{78DC6A9D-FC8B-47B8-94AB-F07541883475}.Release|Any CPU.Build.0 = Release|Any CPU
 		{78DC6A9D-FC8B-47B8-94AB-F07541883475}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{35F417DB-5151-48E2-BBAA-B823D40DEC34}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{35F417DB-5151-48E2-BBAA-B823D40DEC34}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{35F417DB-5151-48E2-BBAA-B823D40DEC34}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{35F417DB-5151-48E2-BBAA-B823D40DEC34}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
