@@ -13,10 +13,11 @@ SET NUMERIC_ROUNDABORT OFF;
 
 
 GO
+:setvar LoadTestData "false"
 :setvar DatabaseName "DIP_Library_DB"
 :setvar DefaultFilePrefix "DIP_Library_DB"
-:setvar DefaultDataPath "C:\Users\Teebone\AppData\Local\Microsoft\VisualStudio\SSDT\DIP_Library_DB"
-:setvar DefaultLogPath "C:\Users\Teebone\AppData\Local\Microsoft\VisualStudio\SSDT\DIP_Library_DB"
+:setvar DefaultDataPath "C:\Users\Ty\AppData\Local\Microsoft\VisualStudio\SSDT\DIP_Library_DB"
+:setvar DefaultLogPath "C:\Users\Ty\AppData\Local\Microsoft\VisualStudio\SSDT\DIP_Library_DB"
 
 GO
 :on error exit
@@ -40,68 +41,31 @@ USE [$(DatabaseName)];
 
 
 GO
-IF EXISTS (SELECT 1
-           FROM   [master].[dbo].[sysdatabases]
-           WHERE  [name] = N'$(DatabaseName)')
-    BEGIN
-        ALTER DATABASE [$(DatabaseName)]
-            SET ARITHABORT ON,
-                CONCAT_NULL_YIELDS_NULL ON,
-                CURSOR_DEFAULT LOCAL 
-            WITH ROLLBACK IMMEDIATE;
-    END
+IF '$(LoadTestData)' = 'true'
 
+BEGIN
 
+DELETE FROM Loans;
+DELETE FROM Students;
+DELETE FROM Books;
+
+INSERT INTO STUDENTS (STUDENTID, FIRSTNAME, LASTNAME, EMAIL, PHONENUMBER) VALUES
+('s12345678', 'Fred', 'Flintstone', '12345678@student.swin.edu.au', '0400 555 111'),
+('s23456789', 'Barney', 'Rubble', '23456789@student.swin.edu.au', '0400 555 222'),
+('s34567890', 'Bam-Bam', 'Rubble', '34567890@student.swin.edu.au', '0400 555 333');
+
+INSERT INTO BOOKS (ISBN, BOOKTITLE, YEARPUBLISHED, AUTHORID, AUTHORFIRSTNAME, AUTHORSURNAME, AUTHORTFN) VALUES
+('978-3-16-148410-0', 'Relationships with Databases, the ins and outs', 1970, 32567, 'Edgar', 'Codd', '150 111 222'),
+('978-3-16-148410-1', 'Normalisation, how to make a database geek fit in.', 1973, 32567, 'Edgar', 'Codd', '150 111 222'),
+('978-3-16-148410-2', 'TCP/IP, the protocol for the masses.', 1983, 76543, 'Vinton', 'Cerf', '150 222 333'),
+('978-3-16-148410-3', 'The Man, the Bombe, and the Enigma.', 1940, 12345, 'Alan', 'Turing', '150 333 444');
+
+INSERT INTO LOANS (STUDENTID, ISBN, DateBorrowed) VALUES
+('s12345678', '978-3-16-148410-0', '01/10/2011'),
+('s23456789', '978-3-16-148410-1', '03/30/2019');
+
+END;
 GO
-IF EXISTS (SELECT 1
-           FROM   [master].[dbo].[sysdatabases]
-           WHERE  [name] = N'$(DatabaseName)')
-    BEGIN
-        ALTER DATABASE [$(DatabaseName)]
-            SET PAGE_VERIFY NONE,
-                DISABLE_BROKER 
-            WITH ROLLBACK IMMEDIATE;
-    END
-
-
-GO
-ALTER DATABASE [$(DatabaseName)]
-    SET TARGET_RECOVERY_TIME = 0 SECONDS 
-    WITH ROLLBACK IMMEDIATE;
-
-
-GO
-IF EXISTS (SELECT 1
-           FROM   [master].[dbo].[sysdatabases]
-           WHERE  [name] = N'$(DatabaseName)')
-    BEGIN
-        ALTER DATABASE [$(DatabaseName)]
-            SET QUERY_STORE (CLEANUP_POLICY = (STALE_QUERY_THRESHOLD_DAYS = 367)) 
-            WITH ROLLBACK IMMEDIATE;
-    END
-
-
-GO
-PRINT N'Creating [dbo].[Books]...';
-
-
-GO
-CREATE TABLE [dbo].[Books] (
-    [Id] INT NOT NULL,
-    PRIMARY KEY CLUSTERED ([Id] ASC)
-);
-
-
-GO
-PRINT N'Creating [dbo].[Student]...';
-
-
-GO
-CREATE TABLE [dbo].[Student] (
-    [Id] INT NOT NULL,
-    PRIMARY KEY CLUSTERED ([Id] ASC)
-);
-
 
 GO
 PRINT N'Update complete.';

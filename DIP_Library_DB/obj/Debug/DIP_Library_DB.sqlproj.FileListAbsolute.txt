@@ -30,7 +30,3 @@ C:\DIP_SwinLibrary_DB\DIP_Library_DB\bin\Debug\DIP_Library_DB.dll
 C:\DIP_SwinLibrary_DB\DIP_Library_DB\bin\Debug\DIP_Library_DB.pdb
 C:\DIP_SwinLibrary_DB\DIP_Library_DB\obj\Debug\DIP_Library_DB.dll
 C:\DIP_SwinLibrary_DB\DIP_Library_DB\obj\Debug\DIP_Library_DB.pdb
-C:\DIP_SwinLibrary_DB\DIP_Library_DB\obj\Debug\Model.xml
-C:\DIP_SwinLibrary_DB\DIP_Library_DB\obj\Debug\refactor.xml
-C:\DIP_SwinLibrary_DB\DIP_Library_DB\obj\Debug\postdeploy.sql
-C:\DIP_SwinLibrary_DB\DIP_Library_DB\obj\Debug\predeploy.sql
